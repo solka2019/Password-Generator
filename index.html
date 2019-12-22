@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" type="text/css" href="password-style.css"/>
-    
-  </head>
-  <body>
-    <div class="wrap">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" type="text/css" href="password-style.css" />
+
+</head>
+
+<body>
+
+  <div id="wrap">
     <header>
       <h1>Password Generator</h1>
 
     </header>
-    <div class="container">
-    <h2>Generate a Password</h2>
-    <hr>
+    <div id="container">
+      <h2>Generate a Password - You must select at least one of the following: </h2>
+      <hr>
+      <div class="select-btn">
+        <label id="ucase" title="Use upper case letters"><input type="checkbox" id=chkUpper name=upper checked>Upper
+          case letters</label>
+        <label id="lcase" title="Use lower case letters"><input type="checkbox" id=chkLower name=lower checked>Lower
+          case letters</label>
+        <label id="numeric" title="Use numbers"> <input type="checkbox" id=chkNumeric name=numeric
+            checked>Numeric</label>
+        <label id="schar" title="Use special characters"><input type="checkbox" id=chkSpecial name=special
+            checked>Special characters</label>
+      </div>
+      <textarea id="your-password" readonly placeholder="Your Secure Password"></textarea>
+      <hr>
+      <button id="generate">Generate Password</button>
 
-    <textarea id="your-password"
-      readonly
-      id="password"
-      placeholder="Your Secure Password"></textarea>
-      <!-- <hr> -->
-      <!-- aria-label="Generated Password" -->
+      <button id="copy">Copy to Clipboard</button>
 
-    <button class="button">Generate Password</button>
-
-    <button class="button">Copy to Clipboard</button>
-
-    <!-- <button id="generate">Generate Password</button>
+      <!-- <button id="generate">Generate Password</button>
     <button id="copy">
       Copy to Clipboard
     </button> -->
-</div>
+
     </div>
-  </body>
+    <!-- </div> -->
+    <script src="script.js"></script>
+</body>
+
 </html>
