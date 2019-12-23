@@ -25,7 +25,7 @@ if (condicao for true) {
 }
 
 do {} while(condicao);
-do something while (condicao == true);
+do something while (passwordSize < 8 || passwordSize > 128);
 do alert("test") while (true);
 
 var passwordSize = 0;
